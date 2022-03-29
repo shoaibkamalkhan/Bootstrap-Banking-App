@@ -1,7 +1,11 @@
-/* h1 {
-    display: block;
+/* Banner Styles */
+
+.banner {
+    padding-top: 92px;
+    margin-bottom: 2rem;
 }
 
-#signBtns {
-    width: 500px;
-} */
+.sign-up-in-btn {
+    height: 60px;
+    width: 160px;
+}
