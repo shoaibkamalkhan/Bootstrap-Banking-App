@@ -10,3 +10,11 @@
     width: 160px;
 }
 
+.btn:active {
+    background-color: none;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
