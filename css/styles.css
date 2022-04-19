@@ -10,11 +10,12 @@
     width: 160px;
 }
 
-.btn:active {
-    background-color: none;
+.btn-primary.active, .btn-primary:active {
+    transition: background-color .15s ease-out!important;
 }
 
 .btn-primary.focus, .btn-primary:focus {
     -webkit-box-shadow: none!important;
     box-shadow: none!important;
+    transition: background-color .15s ease-out!important;
 }
