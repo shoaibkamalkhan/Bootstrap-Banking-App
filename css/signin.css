@@ -1,17 +1,37 @@
 /* Sign In Styles */
 
-.sign-up-in-btn {
+.sign-in-form {
+    min-width: 100%;
+    margin-bottom: 1rem;
+    
+}
+
+.sign-in-hd {
+    text-align: center;
+    margin: 1rem;
+}
+
+.sign-in-btn {
     height: 60px;
     min-width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.border {
+.sign-in-border {
     max-width: 320px;
     background-color: #f9f9f9;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
 }
 
 input, label {
     margin: .25rem 0rem;
+}
+
+.member-tx {
+    text-align: center;
 }

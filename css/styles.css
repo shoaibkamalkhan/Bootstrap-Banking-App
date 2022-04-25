@@ -5,9 +5,26 @@
     margin-bottom: 2rem;
 }
 
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-hd {
+    text-align: center;
+}
+
+/* Button Styles */
+
+.sign-up-in-btn-div {
+    text-align: center;
+}
+
 .sign-up-in-btn {
     height: 60px;
     width: 160px;
+    margin: .25rem;
 }
 
 .btn-primary.active, .btn-primary:active {
@@ -19,3 +36,9 @@
     box-shadow: none!important;
     transition: background-color .15s ease-out!important;
 }
+
+/* Media Queries */
+
+    @media only screen and (min-width: 768px) {
+        
+    }
