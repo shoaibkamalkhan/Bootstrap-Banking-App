@@ -11,6 +11,10 @@
     margin-right: auto;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 .welcome-hd {
     text-align: center;
     margin: 1rem;
@@ -41,5 +45,5 @@
 /* Media Queries */
 
     @media only screen and (min-width: 768px) {
-        
+       
     }

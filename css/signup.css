@@ -1,4 +1,14 @@
+/* Global Styles */
+
+body {
+    padding-bottom: 320px;
+}
+
 /* Sign Up Styles */
+
+h1 {
+    font-size: 1.375rem;
+}
 
 .sign-up-hd {
     text-align: center;
@@ -35,3 +45,13 @@ input, label {
 .terms-of-service {
     text-align: center;
 }
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+        
+        h1 {
+            font-size: 2rem;
+        }
+
+    }
