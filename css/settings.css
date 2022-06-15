@@ -5,10 +5,32 @@
     margin: 1rem;
 }
 
-.tab-content {
-    display: inline;
+.form-label {
+    margin-top: .5rem;
 }
 
+.tab-pane {
+    margin-top: 1rem;
+}
+
+.update-btn {
+    height: 60px;
+    min-width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem; 
+}
+
+/* Media Queries */
+
+    @media only screen and (min-width: 400px) {
+        
+        .container-sm {
+            max-width: 500px;
+        }        
+    }
+
+
+/* Need to create a container to create a column for flexbox */
 
 
 
