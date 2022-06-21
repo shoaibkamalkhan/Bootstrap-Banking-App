@@ -30,13 +30,13 @@ input, label {
     background-color: #f9f9f9;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid #ced4da;
     border-radius: 10px;
 }
 
 .sign-up-btn {
-    height: 60px;
+    height: 50px;
     min-width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -44,6 +44,7 @@ input, label {
 
 .terms-of-service {
     text-align: center;
+    font-size: .75rem;
 }
 
 /* Media Queries */
