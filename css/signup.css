@@ -42,6 +42,11 @@ input, label {
     margin-bottom: 1rem;
 }
 
+.member-tx {
+    text-align: center;
+    font-size: .75rem;
+}
+
 .terms-of-service {
     text-align: center;
     font-size: .75rem;

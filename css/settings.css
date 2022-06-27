@@ -21,6 +21,16 @@
     margin-bottom: 1rem; 
 }
 
+.nav-pills .nav-link {
+    border-radius: 0rem;
+    color: ;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: ;
+    
+}
+
 /* Media Queries */
 
     @media only screen and (min-width: 400px) {
