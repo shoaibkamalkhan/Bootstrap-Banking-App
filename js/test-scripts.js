@@ -16,10 +16,7 @@ async function handleFormSubmit(event) {
     try {
         /* This takes all the fields in the form and makes their values
 		 * available through a `FormData` instance. */
-        const formData = {
-			email: document.getElementById("email").value,
-			password: document.getElementById("password").value
-		};
+        const formData = new FormData(form);
         /* We'll define the `postFormDataAsJson()` function in the next step. */
         const responseData = await postFormDataAsJson({ url, formData });
         console.log({ responseData });
@@ -75,7 +72,34 @@ console.log();
 //     .then(results => results.json())
 //     .then(console.log)
 
-	// const formData = {
-	// 	email: document.getElementById("email").value,
-	// 	password: document.getElementById("password").value
-	// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
