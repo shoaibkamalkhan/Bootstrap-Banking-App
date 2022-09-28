@@ -13,25 +13,52 @@ formEl.addEventListener('submit', async (e) => {
 	// This prevents the form from posting automatically.
 	e.preventDefault();
 	// This creates a new FormData object.
-	const formData = new FormData(formEl);
-	// This serializes the FormData object.
-	const formDataSeralized = Object.fromEntries(formData);
-
-	console.log(formDataSeralized, 'formDataSeralized');
-	console.log(formData, 'formData');
-
-	// This is a try catch statement that performs the POST with fetch.
-	try {
-		const response = await fetch(url, {
-			method: 'POST'
-		});
-		const json = await response.json();
-		console.log(json);
-	} catch (e) {
-		console.error(e);
-	}
-
+	const formData = {
+		email: document.getElementById("email").value,
+		password: document.getElementById("password").value
+	};
+	console.log(formData);
+	
+	fetch(url, {
+		method: 'POST',
+		body: formData,
+	});
 });
+
+
+
+// // This variable selects the url we are posting to.
+// const url = 'https://27979f46-0c53-4efb-9ef0-608da66d0ff9.mock.pstmn.io/userSessions';
+
+// // This variable selects the form element that we are posting.
+// const formEl = document.querySelector('form');
+
+// console.log(formEl);
+
+// // This sets up an event listener on the form element for the submit event.
+// formEl.addEventListener('submit', async (e) => {
+// 	// This prevents the form from posting automatically.
+// 	e.preventDefault();
+// 	// This creates a new FormData object.
+// 	const formData = new FormData(formEl);
+// 	// This serializes the FormData object.
+// 	const formDataSeralized = Object.fromEntries(formData);
+
+// 	console.log(formDataSeralized, 'formDataSeralized');
+// 	console.log(formData, 'formData');
+
+// 	// This is a try catch statement that performs the POST with fetch.
+// 	try {
+// 		const response = await fetch(url, {
+// 			method: 'POST'
+// 		});
+// 		const json = await response.json();
+// 		console.log(json);
+// 	} catch (e) {
+// 		console.error(e);
+// 	}
+
+// });
 
 
 // const signInForm = document.getElementById('sign-in-form');
