@@ -17,12 +17,17 @@ formEl.addEventListener('submit', async (e) => {
 		password: document.getElementById("password").value
 	};
 
+	const formDataJsonString = JSON.stringify(formData);
+
 	console.log(formData);
 
 	// This posts our data using fetch.
 	fetch(url, {
 		method: 'POST',
-		body: formData,
+		body: formDataJsonString,
 	});
+
+	console.log(formDataJsonString);
 });
+
 
