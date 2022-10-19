@@ -21,13 +21,23 @@ formEl.addEventListener('submit', async (e) => {
 
 	console.log(formData);
 
-	// This posts our data using fetch.
-	fetch(url, {
-		method: 'POST',
-		body: formDataJsonString,
-	});
+	// This posts our data using fetch and handles the response back from fetch.
+	try {
+		const response = await fetch(url, {
+			method: 'POST',
+			body: formDataJsonString,
+			headers: {
+				"Content-Type": "application/json"
+			},
+		});
 
-	console.log(formDataJsonString);
+		const json = await response.json();
+		console.log(json);
+		
+	} catch (error) {
+		console.error(error);
+	}
+
 });
 
 
