@@ -33,10 +33,14 @@ formEl.addEventListener('submit', async (e) => {
 
 		const json = await response.json();
 		console.log(json);
-		
+
 	} catch (error) {
 		console.error(error);
 	}
+
+	window.localStorage.setItem('formData', JSON.stringify(formData));
+
+	console.log(localStorage);
 
 });
 
