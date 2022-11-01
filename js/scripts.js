@@ -38,6 +38,7 @@ formEl.addEventListener('submit', async (e) => {
 		console.error(error);
 	}
 
+	// This stores our form data into local storage.
 	window.localStorage.setItem('formData', JSON.stringify(formData));
 
 	console.log(localStorage);
